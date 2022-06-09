@@ -1,5 +1,6 @@
 import Form from ".././components/form";
-import Current from ".././components/current";
+import Historicpage from "./historicPage";
+import State from ".././context/data-state";
 import {
   BrowserRouter,
   Routes,
@@ -7,12 +8,14 @@ import {
 } from "react-router-dom";
 function Main(){
   return (
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Form />}/>
-      
-    </Routes>
-  </BrowserRouter>
+    <State>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Form />}/>
+          <Route path="/historic" element={<Historicpage />}/>
+        </Routes>
+      </BrowserRouter>
+    </State>
   )
 }
 
