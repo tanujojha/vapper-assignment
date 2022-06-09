@@ -26,8 +26,6 @@ function Form(){
   }
 
 
-
-
     return (
     <>
     <div className = "d-flex justify-content-center my-5 mx-3">

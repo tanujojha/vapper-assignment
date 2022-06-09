@@ -2,8 +2,7 @@ import {useContext} from "react";
 import dataContext from "../context/data-context"
 
 function Current(props){
-  // console.log(props.curntdata);
-
+  
   const context = useContext(dataContext);
   const {currentData} = context;
 
